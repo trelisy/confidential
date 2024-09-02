@@ -22,7 +22,8 @@ function validateForm() {
         
         setTimeout(() => {
             if (username === 'alex') {
-                window.location.href = 'display.html'; // Redirect to welcome.html for "alex"
+                window.location.href = 'control.html'; // Redirect to welcome.html for "alex"
+                
             } else {
                 window.location.href = 'display.html'; // Redirect to display.html for other users
             }
