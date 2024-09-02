@@ -8,7 +8,7 @@ function validateForm() {
 
     // List of valid usernames and passwords
     const users = {
-        'alex': 'ani',
+        'alex': 'ani1202',
         'ene': '1125',
         'jufo': 'henaro21',
         'shako': 'aptiaqiaversi69'
