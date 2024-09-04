@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Mission Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="desktop">
+        <div class="folder" onclick="openFolder('folder1')">
+            <img src="green_windows_green_folder_folder_icon_250631.png" alt="Top Secret">
+            <span>Top Secret</span>
+        </div>
+        <div class="folder" onclick="openFolder('folder2')">
+            <img src="green_windows_green_folder_folder_icon_250631.png" alt="Classified">
+            <span>Classified</span>
+        </div>
+        <div class="folder" onclick="openFolder('folder3')">
+            <img src="green_windows_green_folder_folder_icon_250631.png" alt="Reports">
+            <span>Agents</span>
+        </div>
+        <div class="folder" onclick="openFolder('folder4')">
+            <img src="green_windows_green_folder_folder_icon_250631.png" alt="Intel">
+            <span>Missons</span>
+        </div>
+        <div class="folder" onclick="openFolder('folder5')">
+            <img src="green_windows_green_folder_folder_icon_250631.png" alt="Archives">
+            <span>Archives</span>
+        </div>
+    </div>
+
+    <!-- Hidden Folder Contents -->
+    <div id="folder1" class="folder-content">
+        <div class="close-button" onclick="closeFolder('folder1')">X</div>
+        <h2>Top Secret Files</h2>
+        <ul>
+            <li><a href="#">File 1</a></li>
+            <li><a href="#">File 2</a></li>
+            <li><a href="#">File 3</a></li>
+        </ul>
+    </div>
+    <div id="folder2" class="folder-content">
+        <div class="close-button" onclick="closeFolder('folder2')">X</div>
+        <h2>Classified Files</h2>
+        <ul>
+            <li><a href="#">Document A</a></li>
+            <li><a href="#">Document B</a></li>
+            <li><a href="#">Document C</a></li>
+        </ul>
+    </div>
+    <div id="folder3" class="folder-content">
+        <div class="close-button" onclick="closeFolder('folder3')">X</div>
+        <h2>Agents</h2>
+        <ul>
+            <li><a href="control.html">Field Agents</a></li>
+            <li><a href="#">Analists</a></li>
+           
+        </ul>
+    </div>
+    <div id="folder4" class="folder-content">
+        <div class="close-button" onclick="closeFolder('folder4')">X</div>
+        <h2>Missions</h2>
+        <ul>
+            <li><a href="display.html">missions </a></li>
+           
+           
+        </ul>
+    </div>
+    <div id="folder5" class="folder-content">
+        <div class="close-button" onclick="closeFolder('folder5')">X</div>
+        <h2>Archives</h2>
+        <ul>
+            <li><a href="#">Archive 1</a></li>
+            <li><a href="#">Archive 2</a></li>
+            <li><a href="#">Archive 3</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+}
+
+#desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 20px;
+}
+
+.folder {
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.folder img {
+    width: 100px;
+    height: 100px;
+}
+
+.folder span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.folder-content {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    background-color: #1e1e1e;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.folder-content h2 {
+    margin-top: 0;
+}
+
+.folder-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.folder-content ul li {
+    margin: 10px 0;
+}
+
+.folder-content ul li a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.folder-content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+</style>
+
+<script>
+    function openFolder(folderId) {
+    document.getElementById(folderId).style.display = 'block';
+}
+
+function closeFolder(folderId) {
+    document.getElementById(folderId).style.display = 'none';
+}
+
+</script>
