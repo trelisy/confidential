@@ -15,7 +15,8 @@ function validateForm() {
         'iva' : 'arana',
         'chelo' : 'chelo123',
         'podeksa' : 'sagiv70824',
-        'butko' : 'sopo004'
+        'butko' : 'sopo004',
+        'daisy' : 'oda'
     };
 
     // Check if the entered username exists in the users object and if the password matches
@@ -26,8 +27,9 @@ function validateForm() {
         
         setTimeout(() => {
             if (username === 'alex') {
-                window.location.href = 'desktop.html'; // Redirect to welcome.html for "alex"
-                
+                window.location.href = 'desktop.html'; // Redirect to desktop.html for "alex"
+            } else if (username === 'daisy') {
+                window.location.href = 'display.html'; // Redirect to analist.html for "daisy"
             } else {
                 window.location.href = 'display.html'; // Redirect to display.html for other users
             }
