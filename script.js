@@ -29,7 +29,7 @@ function validateForm() {
             if (username === 'alex') {
                 window.location.href = 'desktop.html'; // Redirect to desktop.html for "alex"
             } else if (username === 'daisy') {
-                window.location.href = 'display.html'; // Redirect to analist.html for "daisy"
+                window.location.href = 'proof.html'; // Redirect to analist.html for "daisy"
             } else {
                 window.location.href = 'display.html'; // Redirect to display.html for other users
             }
