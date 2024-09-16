@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Top Secret Blog</title>
+        <title>uploads</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Ensures proper scaling on mobile devices -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
@@ -106,7 +106,7 @@
                     <form id="post-form">
                         <center><h3>Upload Proof</h3></center>
                         <textarea id="post" class="form-control" placeholder="Your name and mission description."></textarea>
-                        <input type="file" class="form-control" id="image" accept="images/*">
+                        <input type="file" id="image" accept="image/*" capture="environment">
                         <div class="text-center mt-2">
                             <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
                         </div>
