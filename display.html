@@ -2,11 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mission</title>
-    
-   
-    
 </head>
 <body>
     <div class="container">
@@ -17,217 +14,184 @@
             <div class="uploaded-photo">
                 <img src="ქუჩის-ძაღლები.jpg" alt="Uploaded Photo">
             </div>
-           
         </div>
-        <ul class="agent-list"> <li><a href="upload.html">upload proof</a></li></ul>
+        <ul class="agent-list"> 
+            <li><a href="upload.html">upload proof</a></li>
+        </ul>
     </div>
 
     <script src="display.js"></script>
-    </body>
+</body>
 
 </html>
 
 <style>
-
   /* General Styles */
-
-
   .agent-list {
     list-style-type: none;
     padding: 0;
-}
+  }
 
-.agent-list li {
+  .agent-list li {
     margin: 15px 0;
-}
+  }
 
-.agent-list a {
+  .agent-list a {
     text-decoration: none;
     color:  #4caf50;
     font-size: 1.5em;
     border: 2px solid #4caf50;
     padding: 12px 20px;
-    
     display: inline-block;
     transition: background-color 0.4s, color 0.4s, transform 0.3s;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
+  }
 
-.agent-list a:hover {
+  .agent-list a:hover {
     background-color: #4caf50;
     color: #0d0d0d;
     transform: scale(1.05);
-}
+  }
 
-.agent-list a:active {
+  .agent-list a:active {
     background-color: #009900;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
-}
+  }
 
-
-body {
+  body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #121212;
-    color: #4caf50; /* Green text to mimic old-school terminals */
+    color: #4caf50;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-image: radial-gradient(circle at center, #121212, #000000);
-    overflow: hidden; /* Prevents scrolling on smaller screens */
-}
+    overflow: hidden;
+  }
 
-.container {
-  
+  .container {
     padding: 20px;
-   
-    box-shadow:  #4caf50; /* Neon glow effect */
-    width: 100%; /* Full width on small screens */
-    max-width: 1000px; /* Max width for larger screens */
-    display: flex; /* Flexbox to align form and content side by side */
-    flex-direction: column; /* Aligns content in a single column */
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    box-sizing: border-box; /* Includes padding and border in element’s total width and height */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-}
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
 
-h2 {
+  h2 {
     margin-bottom: 20px;
     color: #4caf50;
-    font-size: 2rem; /* Responsive font size */
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: blink 1s infinite;
-    text-align: center; /* Center heading text */
-}
+    text-align: center;
+  }
 
-@keyframes blink {
+  @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-}
+  }
 
-.uploaded-content {
+  .uploaded-content {
     display: flex;
-    flex-direction: column; /* Stack text and image vertically */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 400px; /* Max width for the content area */
+    max-width: 400px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-   
     border: 2px solid  #4caf50;
-    box-shadow:  #4caf50; /* Neon glow effect */
-    box-sizing: border-box; /* Includes padding and border in element’s total width and height */
+    box-sizing: border-box;
     color: #4caf50;
-}
+  }
 
-.uploaded-text {
+  .uploaded-text {
     margin-bottom: 20px;
-    white-space: pre-wrap; /* Preserve whitespace for the text */
+    white-space: pre-wrap;
     border: 2px solid #4caf50;
     padding: 10px;
-    
-    text-align: center; /* Center text */
-    width: 100%; /* Full width to maintain consistent style */
-}
-
-.uploaded-photo {
+    text-align: center;
     width: 100%;
-    height: 300px; /* Fixed height for the frame */
-    max-width: 100%; /* Ensures the photo doesn't exceed container width */
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Center image vertically */
-    background-color: #000000; /* Background color to highlight the frame */
-    border: 2px solid #4caf50; /* Border to frame the image */
-    /* Rounded corners for the frame */
-    box-sizing: border-box; /* Includes border and padding in the element’s total width and height */
-    overflow: hidden; /* Hides any overflow */
-}
+  }
 
-.uploaded-photo img {
+  .uploaded-photo {
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border: 2px solid #4caf50;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .uploaded-photo img {
     max-width: 100%;
     max-height: 100%;
-    width: auto; /* Adjust width to maintain aspect ratio */
-    height: auto; /* Adjust height to maintain aspect ratio */
-    object-fit: contain; /* Scale image to fit within the frame while maintaining aspect ratio */
-    border: 0; /* Remove border from the image */
-}
+    object-fit: contain;
+  }
 
-.delete-button {
+  .delete-button {
     width: 100%;
     padding: 12px;
     background-color: #000000;
     color:  #4caf50;
     border: 2px solid  #4caf50;
-  
     cursor: pointer;
-    font-size: 1rem; /* Responsive font size */
+    font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
     margin-top: 10px;
-    box-sizing: border-box; /* Includes padding and border in element’s total width and height */
-}
+    box-sizing: border-box;
+  }
 
-.delete-button:hover {
+  .delete-button:hover {
     background-color: #4caf50;
     color: #000000;
     border-color: #ff0000;
     transform: translateY(-2px);
-}
+  }
 
-.delete-button:active {
+  .delete-button:active {
     transform: translateY(0);
     background-color: #ff0000;
     color: #ffffff;
     border-color: #ff0000;
-}
+  }
 
-</style>
-
-<!-- <script>
-// display.js
-
-window.addEventListener('DOMContentLoaded', (event) => {
-    const uploadedText = localStorage.getItem('uploadedText');
-    const uploadedPhoto = localStorage.getItem('uploadedPhoto');
-
-    if (uploadedText || uploadedPhoto) {
-        const uploadedTextElement = document.getElementById('uploaded-text');
-        const uploadedPhotoElement = document.querySelector('.uploaded-photo');
-
-        // Display the uploaded text
-        if (uploadedText) {
-            uploadedTextElement.textContent = uploadedText;
-        }
-
-        // Display the uploaded photo
-        if (uploadedPhoto) {
-            const img = document.createElement('img');
-            img.src = uploadedPhoto;
-            uploadedPhotoElement.innerHTML = ''; // Clear any existing content
-            uploadedPhotoElement.appendChild(img);
-        }
+  /* Media query for small devices (phones) */
+  @media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
     }
-});
 
-function deleteContent() {
-    const uploadedTextElement = document.getElementById('uploaded-text');
-    const uploadedPhotoElement = document.querySelector('.uploaded-photo');
+    .agent-list a {
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
 
-    // Clear content from the display page
-    uploadedTextElement.textContent = 'Content has been deleted.';
-    uploadedPhotoElement.innerHTML = '';
+    .uploaded-content {
+        max-width: 300px;
+    }
 
-    // Remove content from localStorage
-    localStorage.removeItem('uploadedText');
-    localStorage.removeItem('uploadedPhoto');
-}
+    .uploaded-photo {
+        height: 200px;
+    }
 
-
-</script> -->
+    h2 {
+        font-size: 1.5rem;
+    }
+  }
+</style>
