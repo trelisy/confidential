@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Mission Desktop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,7 +22,7 @@
         </div>
         <div class="folder" onclick="openFolder('folder4')">
             <img src="green_windows_green_folder_folder_icon_250631.png" alt="Intel">
-            <span>Missions</span>
+            <span>Missons</span>
         </div>
         <div class="folder" onclick="openFolder('folder5')">
             <img src="green_windows_green_folder_folder_icon_250631.png" alt="Archives">
@@ -54,21 +54,24 @@
         <h2>Agents</h2>
         <ul>
             <li><a href="control.html">Field Agents</a></li>
-            <li><a href="analist.html">Analysts</a></li>
+            <li><a href="analist.html">Analists</a></li>
+           
         </ul>
     </div>
     <div id="folder4" class="folder-content">
         <div class="close-button" onclick="closeFolder('folder4')">X</div>
         <h2>Missions</h2>
         <ul>
-            <li><a href="display.html">Missions</a></li>
+            <li><a href="display.html">missions </a></li>
+           
+           
         </ul>
     </div>
     <div id="folder5" class="folder-content">
         <div class="close-button" onclick="closeFolder('folder5')">X</div>
         <h2>Archives</h2>
         <ul>
-            <li><a href="proof.html">Completed Missions</a></li>
+            <li><a href="proof.html">Completed missions</a></li>
             <li><a href="#">Archive 2</a></li>
             <li><a href="#">Archive 3</a></li>
         </ul>
@@ -78,14 +81,17 @@
 </body>
 </html>
 
+
+
+
+
+
 <style>
-
-
 body {
     margin: 0;
     padding: 0;
     background-image: url('');
-    background-size: cover;
+    background-size:cover;
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00;
 }
@@ -138,6 +144,7 @@ body {
     margin-bottom: 10px;
 }
 
+
 .folder-content h2 {
     margin-top: 0;
 }
@@ -165,40 +172,19 @@ body {
     color: #ff0000;
 }
 
-@media (max-width: 768px) {
-    #desktop {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .folder {
-        margin: 10px;
-    }
-
-    .folder img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .folder span {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .folder img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .folder span {
-        font-size: 12px;
-    }
-}
 
 </style>
 
 <script>
+    function openFolder(folderId) {
+    document.getElementById(folderId).style.display = 'block';
+}
+
+function closeFolder(folderId) {
+    document.getElementById(folderId).style.display = 'none';
+}
+
+
 
 function openFolder(folderId) {
     const folder = document.getElementById(folderId);
