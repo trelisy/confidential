@@ -16,7 +16,8 @@ function validateForm() {
         'chelo' : 'chelo123',
         'podeksa' : 'sagiv70824',
         'butko' : 'sopo004',
-        'daisy' : 'oda'
+        'daisy' : 'oda',
+        'tato':'SHELBY1234$'
     };
 
     // Check if the entered username exists in the users object and if the password matches
