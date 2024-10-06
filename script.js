@@ -5,7 +5,7 @@ function validateForm() {
     const modalText = document.getElementById('modal-text');
     const modalContent = document.querySelector('.modal-content');
 
-    // Encoded usernames and passwords
+    // აღარ არის აქ პაროლები ბატონო ჯაყო :)
     const encodedUsers = {
         'YWxleA==': 'YW5pMTIwMg==',
         'ZW5l': 'MTEyNQ==',
